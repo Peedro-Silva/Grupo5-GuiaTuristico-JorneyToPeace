@@ -1,19 +1,70 @@
-body{
+body {
     background-color: aliceblue;
-}
-
-nav{
-    background-color: rgb(137, 228, 198);
-    padding: 20px;
-    border-radius: 20px;
-    
-}
-
-nav a{
-    text-decoration: none;
+    background-image: linear-gradient(#252570, aliceblue);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
+    border-radius: 25px;
+}
+
+nav {
+    display: flex;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+    height: 60px;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8282aa;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.imgFundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imagens/fundo-malta.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+h2 {
     font-size: 30px;
-    margin: 15px;
-    text-align: center;
+    color: rgb(48, 25, 3);
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    margin-top: 0.7rem;
+    background: #c9a45c;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(48, 25, 3);
 }

@@ -1,5 +1,5 @@
 body {
-    background-color: azure;
+    background-image: linear-gradient(to right, azure, rgb(106, 179, 179));
 }
 
 .bemVindo {
@@ -9,13 +9,15 @@ body {
     border-radius: 25px;
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(228, 241, 241);
     text-align: center;
 }
 
 .bemVindo button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
+    font-weight: bold;
+    color: rgb(22, 21, 21);
     border-radius: 10px;
     padding: 10px;
     width: 100px;
