@@ -3,6 +3,7 @@
 body {
     background-color: aliceblue;
     background-image: linear-gradient(#252570 0%, aliceblue 40%);
+    background-repeat: no-repeat;
     font-family: "Raleway", sans-serif;
     border-radius: 25px;
 }
@@ -22,6 +23,16 @@ nav {
 .logo {
     position: absolute;
     left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home{
+    position: absolute;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;

@@ -29,6 +29,16 @@ nav {
     align-items: center;
 }
 
+.home{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 nav a {
     text-decoration: none;
     color: #8282aa;

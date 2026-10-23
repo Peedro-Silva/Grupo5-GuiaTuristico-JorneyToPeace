@@ -3,6 +3,7 @@
 body {
     background-color: aliceblue;
     background-image: linear-gradient(#252570 0%, aliceblue 40%);
+    background-repeat: no-repeat;
     font-family: "Raleway", sans-serif;
     border-radius: 25px;
 }
@@ -26,7 +27,7 @@ nav a {
     font-size: 24px;
 }
 
-h3{
+h3 {
     font-size: 40px;
     color: rgb(48, 25, 3);
     margin-top: 50px;
@@ -48,15 +49,17 @@ p {
     align-items: center;
 }
 
-.cartoes{
+.home{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 45px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
-.cartoesDesco{
+.cartoesDesco {
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -64,12 +67,19 @@ p {
     flex-wrap: wrap;
 }
 
-.nome{
+.nome {
     font-weight: bold;
 }
 
+.bola {
+    transition: transform 0.3s ease;
+}
 
-.bola img{
+.bola:hover {
+  transform: scale(1.05);
+}
+
+.bola img {
     margin: 30px;
     width: 200px;
     border-radius: 1000px;

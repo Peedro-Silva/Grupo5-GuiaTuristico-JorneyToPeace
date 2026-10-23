@@ -3,6 +3,7 @@
 body {
     background-color: aliceblue;
     background-image: linear-gradient(#252570 0%, aliceblue 40%);
+    background-repeat: no-repeat;
     font-family: "Raleway", sans-serif;
     border-radius: 25px;
 }
@@ -14,8 +15,14 @@ nav {
     align-items: center;
     gap: 30px;
     border-radius: 25px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid transparent;
     padding: 20px;
-    position: relative;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    z-index: 1000;
     height: 40px;
 }
 

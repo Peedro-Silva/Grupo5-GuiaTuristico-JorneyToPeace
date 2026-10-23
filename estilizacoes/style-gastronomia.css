@@ -3,6 +3,7 @@
 body {
     background-color: aliceblue;
     background-image: linear-gradient(#252570 0%, aliceblue 40%);
+    background-repeat: no-repeat;
     font-family: "Raleway", sans-serif;
     border-radius: 25px;
 }
@@ -48,6 +49,16 @@ p {
     align-items: center;
 }
 
+.home{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cartoes{
     display: flex;
     justify-content: center;
@@ -56,21 +67,20 @@ p {
     flex-wrap: wrap;
 }
 
-.cartoesDesco{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
 .cartao{
     display: block;
     background-color: #252570;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
     color: azure;
     width: 300px;
     border-radius: 25px;
     padding: 10px;
+}
+
+.cartao:hover {
+  transform: scale(1.05);
 }
 
 .cartao p{
