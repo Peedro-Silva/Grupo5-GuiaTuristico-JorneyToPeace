@@ -119,7 +119,6 @@ h2 {
     scroll-snap-align: start;
     border-radius: 10px;
 }
-""
 .carrossel img:hover {
     transform: scale(1.05);
 }
