@@ -13,6 +13,7 @@ nav {
     background-color: azure;
     justify-content: center;
     align-items: center;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
     gap: 30px;
     border-radius: 25px;
     padding: 20px;
@@ -21,13 +22,32 @@ nav {
 }
 
 nav a {
+    display: inline-block;
     text-decoration: none;
     color: #8282aa;
     font-weight: bold;
     font-size: 24px;
+    position: relative;
 }
 
-h3{
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #8282aa;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+h3 {
     font-size: 40px;
     color: rgb(48, 25, 3);
     margin-top: 50px;
@@ -39,7 +59,7 @@ p {
     margin-bottom: 0;
 }
 
-footer{
+footer {
     background-color: #252570;
     padding: 5px;
     font-family: "Raleway", sans-serif;
@@ -57,7 +77,7 @@ footer{
     align-items: center;
 }
 
-.home{
+.home {
     position: absolute;
     right: 30px;
     top: 50%;
@@ -67,7 +87,7 @@ footer{
     align-items: center;
 }
 
-.cartoes{
+.cartoes {
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -75,7 +95,7 @@ footer{
     flex-wrap: wrap;
 }
 
-.cartao{
+.cartao {
     display: block;
     background-color: #252570;
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -87,24 +107,24 @@ footer{
 }
 
 .cartao:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 
-.cartao p{
+.cartao p {
     color: azure;
     text-align: center;
 }
 
-.cartao a{
+.cartao a {
     color: azure;
 }
 
-.nome{
+.nome {
     font-weight: bold;
 }
 
-.cartao img{
+.cartao img {
     border-radius: 25px;
     width: 300px;
 }
