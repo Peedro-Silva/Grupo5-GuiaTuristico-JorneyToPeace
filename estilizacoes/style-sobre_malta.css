@@ -52,6 +52,19 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
+footer {
+    background-color: #252570;
+    padding: 7px;
+    font-family: "Raleway", sans-serif;
+    border-radius: 5px;
+    margin-top: 100px;
+    text-align: center;
+
+    p {
+        color: aliceblue;
+    }
+}
+
 .logo {
     position: absolute;
     left: 20px;
@@ -62,7 +75,7 @@ nav a:hover::after {
     align-items: center;
 }
 
-.home{
+.home {
     position: absolute;
     right: 30px;
     top: 50%;
@@ -87,7 +100,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-h3{
+h3 {
     font-size: 40px;
     color: rgb(48, 25, 3);
     margin-top: 50px;
@@ -101,19 +114,21 @@ p {
     padding: 10px;
 }
 
-ol{
+ol {
     text-align: justify;
 }
 
-.lista{
+.lista {
     font-size: 30px;
     font-weight: bolder;
 }
-.listas{
+
+.listas {
     font-size: 20px;
     padding: 10px;
 }
-hr{
+
+hr {
     margin-left: 50px;
     margin-right: 50px;
     color: black;

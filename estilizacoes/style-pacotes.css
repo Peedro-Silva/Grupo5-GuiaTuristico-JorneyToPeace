@@ -5,6 +5,7 @@ body {
     background-image: linear-gradient(#252570 0%, aliceblue 40%);
     background-repeat: no-repeat;
     font-family: "Raleway", sans-serif;
+    padding-top: 100px;
     border-radius: 25px;
 }
 
@@ -13,11 +14,16 @@ nav {
     background-color: azure;
     justify-content: center;
     align-items: center;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
     gap: 30px;
     border-radius: 25px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid transparent;
     padding: 20px;
-    position: relative;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    z-index: 1000;
     height: 40px;
 }
 
@@ -47,6 +53,19 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
+footer {
+    background-color: #252570;
+    padding: 7px;
+    font-family: "Raleway", sans-serif;
+    border-radius: 5px;
+    margin-top: 100px;
+    text-align: center;
+
+    p {
+        color: aliceblue;
+    }
+}
+
 h3 {
     font-size: 40px;
     color: rgb(48, 25, 3);
@@ -69,7 +88,7 @@ p {
     align-items: center;
 }
 
-.home{
+.home {
     position: absolute;
     right: 30px;
     top: 50%;
@@ -96,7 +115,7 @@ p {
 }
 
 .bola:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .bola img {

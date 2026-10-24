@@ -52,6 +52,19 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
+footer {
+    background-color: #252570;
+    padding: 7px;
+    font-family: "Raleway", sans-serif;
+    border-radius: 5px;
+    margin-top: 100px;
+    text-align: center;
+
+    p {
+        color: aliceblue;
+    }
+}
+
 .logo {
     position: absolute;
     left: 20px;
@@ -88,102 +101,25 @@ h2 {
     margin-bottom: 20px;
 }
 
-h3{
-    font-size: 40px;
-    color: rgb(48, 25, 3);
-    margin-top: 50px;
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  gap: 12px;
+  padding: 8px;
 }
 
-p {
-    font-size: 20px;
-    color: rgb(48, 25, 3);
-    margin-bottom: 0;
-}
 
-summary{
-    text-align: end;
-    margin-right: 100px;
-}
-
-details{
-    font-size: 20px;
-    color: rgb(48, 25, 3);
-}
-
-.cartoes{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 45px;
-    flex-wrap: wrap;
-}
-
-.cartoesDesco{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.cartao{
-    display: block;
-    background-color: #252570;
-    color: azure;
-    width: 300px;
-    border-radius: 25px;
-    padding: 10px;
-}
-
-.cartao p{
-    color: azure;
-    text-align: center;
-}
-
-.cartao a{
-    color: azure;
-}
-
-.nome{
-    font-weight: bold;
-}
-
-.cartao img{
-    border-radius: 25px;
-    width: 300px;
-}
-
-.bola img{
-    margin: 30px;
-    width: 200px;
-    border-radius: 1000px;
-}
-
-.form{
-    display: flex;
-    justify-content: center;
-}
-
-form{
-    display: block;
-    text-align: center;
-    background-color: #252570;
-    color: rgb(235, 229, 229);
-    width: 400px;
-    border-radius: 25px;
-    padding: 30PX;
-}
-
-form input{
-    margin: 10px;
-    border-radius: 5px;
-}
-
-form button{
-    padding: 5px 30px 5px 30px;
+.carrossel img {
+    flex: 0 0 auto;
+    width: 220px; 
+    height: 160px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    scroll-snap-align: start;
     border-radius: 10px;
 }
-
-form p{
-    color: rgb(235, 229, 229);
+""
+.carrossel img:hover {
+    transform: scale(1.05);
 }

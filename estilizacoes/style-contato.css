@@ -5,6 +5,8 @@ body {
     background-image: linear-gradient(#252570 0%, aliceblue 40%);
     background-repeat: no-repeat;
     font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding-top: 100px;
     border-radius: 25px;
 }
 
@@ -15,9 +17,66 @@ nav {
     align-items: center;
     gap: 30px;
     border-radius: 25px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+    border: 1px solid transparent;
     padding: 20px;
-    position: relative;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    z-index: 1000;
     height: 40px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #8282aa;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #8282aa;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+h3 {
+    font-size: 40px;
+    color: rgb(48, 25, 3);
+    margin-top: 50px;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(48, 25, 3);
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #252570;
+    padding: 7px;
+    font-family: "Raleway", sans-serif;
+    border-radius: 5px;
+    margin-top: 100px;
+    text-align: center;
+
+    p {
+        color: aliceblue;
+    }
 }
 
 .logo {
@@ -30,7 +89,7 @@ nav {
     align-items: center;
 }
 
-.home{
+.home {
     position: absolute;
     right: 30px;
     top: 50%;
@@ -40,31 +99,28 @@ nav {
     align-items: center;
 }
 
-nav a {
-    text-decoration: none;
-    color: #8282aa;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 50px;
-    padding-left: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(48, 25, 3);
-    margin-bottom: 20px;
-}
-
-h3{
-    font-size: 40px;
-    color: rgb(48, 25, 3);
-    margin-top: 50px;
+form {
+    background-color: #252570;
+    color: aliceblue;
+    border-radius: 25px;
     padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-p {
-    font-size: 20px;
-    color: rgb(48, 25, 3);
-    margin-bottom: 0;
-    padding: 10px;
+input {
+    margin: 7px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px;
+}
+
+.redeSocial {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
 }
